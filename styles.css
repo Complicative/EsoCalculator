@@ -34,7 +34,6 @@ h1 {
 
 h2 {
     text-align: center;
-    padding: 10px 0;
 }
 
 h3 {
@@ -46,7 +45,6 @@ h3 {
 * {
     font-family: ui-sans-serif, sans-serif;
     color: var(--primary-text-color);
-    line-height: 30px;
 }
 
 
@@ -135,7 +133,7 @@ img {
 }
 
 .HalfPageDiv {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -143,14 +141,16 @@ img {
     overflow: auto;
 }
 
-#fullDiv {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
 
 .CategoriesDiv {
     display: flex;
+
+}
+
+@media screen and (max-width: 1300px) {
+    .CategoriesDiv {
+        display: block;
+    }
 }
 
 .CategoryDiv {
@@ -159,6 +159,9 @@ img {
     margin: 0px auto;
     width: fit-content;
     padding: 0 25px;
+    text-wrap: nowrap;
+    line-height: 24px;
+
 }
 
 .LRMargin {
@@ -167,7 +170,7 @@ img {
 }
 
 #title_div {
-    height: 10%;
+    height: 8%;
 }
 
 
@@ -182,22 +185,26 @@ img {
 
 #penetration {
     color: var(--primary-text-color);
-    font-size: 5em;
+    background-color: var(--primary-background-color);
+    font-size: 4em;
 
     width: 100%;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+
+    position: sticky;
+    top: 0;
 }
 
 #critDmg {
     color: var(--primary-text-color);
-    font-size: 5em;
+    background-color: var(--primary-background-color);
+    font-size: 4em;
 
     width: 100%;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+
+    position: sticky;
+    top: 0;
 }
 
 #btn_start {
@@ -275,7 +282,7 @@ img {
     right: 0;
     bottom: 0;
     position: fixed;
-    width: 20%;
+    width: 15%;
 }
 
 #btn_menu_close {

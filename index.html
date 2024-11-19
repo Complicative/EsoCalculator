@@ -92,219 +92,209 @@
         <h1>The Elder Scrolls Online Calculator</h1>
     </div>
     <div class="HalfPageDiv">
-        <div id="fullDiv">
-            <h2 class="LRMargin">Penetration Calculator
-            </h2>
-            <div class="FlexDiv">
-                <div id="penetration">Error</div>
+        <h2 class="LRMargin">Penetration Calculator</h2>
+        <div id="penetration">Error</div>
+        <div class="CategoriesDiv">
+            <div class="CategoryDiv">
+                <h3>Group Gear</h3>
+                <input type="checkbox" id="tremorscaleCheckbox" class="penetrationModifier" value="2400"><label
+                    for="tremorscaleCheckbox">Tremorscale
+                    (2400)</label><br>
+                <input type="checkbox" id="alkoshCheckbox" class="penetrationModifier" value="6000"><label
+                    for="alkoshCheckbox">Alkosh (6000)</label><br>
+                <input type="checkbox" id="crimsonCheckbox" class="penetrationModifier" value="3541"><label
+                    for="crimsonCheckbox">Crimson Oath
+                    (3541)</label><br>
+                <label for="crusherSelect">Crusher Enchant</label>
+                <select id="crusherSelect" class="penetrationModifier">
+                    <option value="0">No Crusher</option>
+                    <option value="2108" selected>Infused Two-Hander (2108)</option>
+                    <option value="1622">Two-Hander (1622)</option>
+                    <option value="1054">Infused One-Hander (1054)</option>
+                    <option value="811">One-Hander (811)</option>
+                </select><br>
             </div>
+            <div class="CategoryDiv">
+                <h3>Player Gear</h3>
+                <label for="lightArmorSelect">Light Armor (939)</label>
+                <select id="lightArmorSelect" class="penetrationModifier">
+                    <option value="0">0 pieces</option>
+                    <option value="939">1 piece</option>
+                    <option value="1878">2 pieces</option>
+                    <option value="2817">3 pieces</option>
+                    <option value="3756">4 pieces</option>
+                    <option value="4695">5 pieces</option>
+                    <option value="5634">6 pieces</option>
+                    <option value="6573">7 pieces</option>
+                </select><br>
+                <input type="checkbox" id="velothiCheckbox" class="penetrationModifier" value="1650"><label
+                    for="velothiCheckbox">Velothi Ur-Mage's Amulet (1650)</label><br>
+                <input type="checkbox" id="arenaWeaponCheckbox" class="penetrationModifier" value="1190"><label
+                    for="arenaWeaponCheckbox">Arena Weapon Line (1190)</label><br>
+                <hr class="breakLine01">
 
-            <div class="CategoriesDiv">
-                <div class="CategoryDiv">
-                    <h3>Group Gear</h3>
-                    <input type="checkbox" id="tremorscaleCheckbox" class="penetrationModifier" value="2400"><label
-                        for="tremorscaleCheckbox">Tremorscale
-                        (2400)</label><br>
-                    <input type="checkbox" id="alkoshCheckbox" class="penetrationModifier" value="6000"><label
-                        for="alkoshCheckbox">Alkosh (6000)</label><br>
-                    <input type="checkbox" id="crimsonCheckbox" class="penetrationModifier" value="3541"><label
-                        for="crimsonCheckbox">Crimson Oath
-                        (3541)</label><br>
-                    <label for="crusherSelect">Crusher Enchant</label>
-                    <select id="crusherSelect" class="penetrationModifier">
-                        <option value="0">No Crusher</option>
-                        <option value="2108" selected>Infused Two-Hander (2108)</option>
-                        <option value="1622">Two-Hander (1622)</option>
-                        <option value="1054">Infused One-Hander (1054)</option>
-                        <option value="811">One-Hander (811)</option>
-                    </select><br>
-                </div>
-                <div class="CategoryDiv">
-                    <h3>Player Gear</h3>
-                    <label for="lightArmorSelect">Light Armor (939)</label>
-                    <select id="lightArmorSelect" class="penetrationModifier">
-                        <option value="0">0 pieces</option>
-                        <option value="939">1 piece</option>
-                        <option value="1878">2 pieces</option>
-                        <option value="2817">3 pieces</option>
-                        <option value="3756">4 pieces</option>
-                        <option value="4695">5 pieces</option>
-                        <option value="5634">6 pieces</option>
-                        <option value="6573">7 pieces</option>
-                    </select><br>
-                    <input type="checkbox" id="velothiCheckbox" class="penetrationModifier" value="1650"><label
-                        for="velothiCheckbox">Velothi Ur-Mage's Amulet (1650)</label><br>
-                    <input type="checkbox" id="arenaWeaponCheckbox" class="penetrationModifier" value="1190"><label
-                        for="arenaWeaponCheckbox">Arena Weapon Line (1190)</label><br>
-                    <hr class="breakLine01">
+                <label for="penLineSelect">Penetration Line (1487)</label>
+                <select id="penLineSelect" class="penetrationModifier">
+                    <option value="0">0 lines</option>
+                    <option value="1487">1 line</option>
+                    <option value="2974">2 lines</option>
+                    <option value="4461">3 lines</option>
+                </select><br>
+                <label for="shapenedSelect">Shapened trait</label>
+                <select id="shapenedSelect" class="penetrationModifier">
+                    <option value="0">No traits</option>
+                    <option value="1638">One-Hander (1638)</option>
+                    <option value="3276">Two-Hander (3276) </option>
+                </select><br>
+                <label for="maceSelect">Mace/Maul</label>
+                <select id="maceSelect" class="penetrationModifier">
+                    <option value="0">None</option>
+                    <option value="1487">Mace (1487)</option>
+                    <option value="2974">2 Maces/Maul (2974) </option>
+                </select><br>
+                <input type="checkbox" id="shatteredFateCheckbox" class="penetrationModifier" value="7918"><label
+                    for="shatteredFateCheckbox">Shattered Fate Set (7918)</label><br>
+            </div>
+            <div class="CategoryDiv">
+                <h3>(De)Buffs</h3>
+                <input type="checkbox" id="majorBreachCheckbox" class="penetrationModifier" value="5948" checked><label
+                    for="majorBreachCheckbox">Major Breach (5948)</label><br>
+                <input type="checkbox" id="minorBreachCheckbox" class="penetrationModifier" value="2974" checked><label
+                    for="minorBreachCheckbox">Minor Breach (2974)</label><br>
+                <input type="checkbox" id="runicSunderCheckbox" class="penetrationModifier" value="2200"><label
+                    for="runicSunderCheckbox">Runic Sunder
+                    (2200)</label><br>
+                <hr class="breakLine01">
 
-                    <label for="penLineSelect">Penetration Line (1487)</label>
-                    <select id="penLineSelect" class="penetrationModifier">
-                        <option value="0">0 lines</option>
-                        <option value="1487">1 line</option>
-                        <option value="2974">2 lines</option>
-                        <option value="4461">3 lines</option>
-                    </select><br>
-                    <label for="shapenedSelect">Shapened trait</label>
-                    <select id="shapenedSelect" class="penetrationModifier">
-                        <option value="0">No traits</option>
-                        <option value="1638">One-Hander (1638)</option>
-                        <option value="3276">Two-Hander (3276) </option>
-                    </select><br>
-                    <label for="maceSelect">Mace/Maul</label>
-                    <select id="maceSelect" class="penetrationModifier">
-                        <option value="0">None</option>
-                        <option value="1487">Mace (1487)</option>
-                        <option value="2974">2 Maces/Maul (2974) </option>
-                    </select><br>
-                    <input type="checkbox" id="shatteredFateCheckbox" class="penetrationModifier" value="7918"><label
-                        for="shatteredFateCheckbox">Shattered Fate Set (7918)</label><br>
-                </div>
-                <div class="CategoryDiv">
-                    <h3>(De)Buffs</h3>
-                    <input type="checkbox" id="majorBreachCheckbox" class="penetrationModifier" value="5948"
-                        checked><label for="majorBreachCheckbox">Major Breach (5948)</label><br>
-                    <input type="checkbox" id="minorBreachCheckbox" class="penetrationModifier" value="2974"
-                        checked><label for="minorBreachCheckbox">Minor Breach (2974)</label><br>
-                    <input type="checkbox" id="runicSunderCheckbox" class="penetrationModifier" value="2200"><label
-                        for="runicSunderCheckbox">Runic Sunder
-                        (2200)</label><br>
-                    <hr class="breakLine01">
+                <input type="checkbox" id="crystalWeaponCheckbox" class="penetrationModifier" value="1000"><label
+                    for="crystalWeaponCheckbox">Crystal Weapon (1000)</label><br>
+            </div>
+            <div class="CategoryDiv">
+                <h3>Passives</h3>
+                <input type="checkbox" id="piercingCheckbox" class="penetrationModifier" value="700" checked><label
+                    for="piercingCheckbox">Piercing (CP passive) (700)</label><br>
+                <input type="checkbox" id="nightbladePenCheckbox" class="penetrationModifier" value="2974"><label
+                    for="nightbladePenCheckbox">Nightblade (2974)</label><br>
+                <input type="checkbox" id="necromancerCheckbox" class="penetrationModifier" value="1500"><label
+                    for="necromancerCheckbox">Necromancer (1500)</label><br>
+                <label for="arcSelect">Arcanist (991)</label>
+                <select id="arcSelect" class="penetrationModifier">
+                    <option value="0">0 skills</option>
+                    <option value="991">1 piece</option>
+                    <option value="1982">2 skills</option>
+                    <option value="2973">3 skills</option>
+                    <option value="3964">4 skills</option>
+                    <option value="4955">5 skills</option>
+                    <option value="5946">6 skills</option>
+                </select><br>
+                <input type="checkbox" id="woodElfCheckbox" class="penetrationModifier" value="2200"><label
+                    for="woodElfCheckbox">Wood Elf (950)</label><br>
+                <label for="forceOfNatureSelect">Force of Nature (660)</label>
+                <select id="forceOfNatureSelect" class="penetrationModifier">
+                    <option value="0">0 status effects</option>
+                    <option value="660">1 status effect</option>
+                    <option value="1320">2 status effects</option>
+                    <option value="1980">3 status effects</option>
+                    <option value="2640">4 status effects</option>
+                    <option value="3300">5 status effects</option>
+                    <option value="3960">6 status effects</option>
+                </select><br>
+                <hr class="breakLine01">
 
-                    <input type="checkbox" id="crystalWeaponCheckbox" class="penetrationModifier" value="1000"><label
-                        for="crystalWeaponCheckbox">Crystal Weapon (1000)</label><br>
-                </div>
-                <div class="CategoryDiv">
-                    <h3>Passives</h3>
-                    <input type="checkbox" id="piercingCheckbox" class="penetrationModifier" value="700" checked><label
-                        for="piercingCheckbox">Piercing (CP passive) (700)</label><br>
-                    <input type="checkbox" id="nightbladePenCheckbox" class="penetrationModifier" value="2974"><label
-                        for="nightbladePenCheckbox">Nightblade (2974)</label><br>
-                    <input type="checkbox" id="necromancerCheckbox" class="penetrationModifier" value="1500"><label
-                        for="necromancerCheckbox">Necromancer (1500)</label><br>
-                    <label for="arcSelect">Arcanist (991)</label>
-                    <select id="arcSelect" class="penetrationModifier">
-                        <option value="0">0 skills</option>
-                        <option value="991">1 piece</option>
-                        <option value="1982">2 skills</option>
-                        <option value="2973">3 skills</option>
-                        <option value="3964">4 skills</option>
-                        <option value="4955">5 skills</option>
-                        <option value="5946">6 skills</option>
-                    </select><br>
-                    <input type="checkbox" id="woodElfCheckbox" class="penetrationModifier" value="2200"><label
-                        for="woodElfCheckbox">Wood Elf (950)</label><br>
-                    <label for="forceOfNatureSelect">Force of Nature (660)</label>
-                    <select id="forceOfNatureSelect" class="penetrationModifier">
-                        <option value="0">0 status effects</option>
-                        <option value="660">1 status effect</option>
-                        <option value="1320">2 status effects</option>
-                        <option value="1980">3 status effects</option>
-                        <option value="2640">4 status effects</option>
-                        <option value="3300">5 status effects</option>
-                        <option value="3960">6 status effects</option>
-                    </select><br>
-                    <hr class="breakLine01">
-
-                    <label for="loverMundusSelect">Lover Mundus</label>
-                    <select id="loverMundusSelect" class="penetrationModifier">
-                        <option value="0">No Lover Mundus</option>
-                        <option value="2744">0 divine pieces</option>
-                        <option value="2993">1 divine pieces</option>
-                        <option value="3243">2 divine pieces</option>
-                        <option value="3493">3 divine pieces</option>
-                        <option value="3742">4 divine pieces</option>
-                        <option value="3992">5 divine pieces</option>
-                        <option value="4242">6 divine pieces</option>
-                        <option value="4491">7 divine pieces</option>
-                        <option value="4741">8 divine pieces</option>
-                    </select><br>
-                </div>
+                <label for="loverMundusSelect">Lover Mundus</label>
+                <select id="loverMundusSelect" class="penetrationModifier">
+                    <option value="0">No Lover Mundus</option>
+                    <option value="2744">0 divine pieces</option>
+                    <option value="2993">1 divine pieces</option>
+                    <option value="3243">2 divine pieces</option>
+                    <option value="3493">3 divine pieces</option>
+                    <option value="3742">4 divine pieces</option>
+                    <option value="3992">5 divine pieces</option>
+                    <option value="4242">6 divine pieces</option>
+                    <option value="4491">7 divine pieces</option>
+                    <option value="4741">8 divine pieces</option>
+                </select><br><br>
             </div>
         </div>
 
     </div>
     <div class="HalfPageDiv">
-        <div id="fullDiv">
-            <h2 class="LRMargin">Critical Damage Calculator
-            </h2>
-            <div class="FlexDiv">
-                <div id="critDmg">Error</div>
+        <h2 class="LRMargin">Critical Damage Calculator
+        </h2>
+        <div id="critDmg">Error</div>
+
+        <div class="CategoriesDiv">
+            <div class="CategoryDiv">
+                <h3>Group Gear</h3>
+                <input type="checkbox" id="ecCheckbox" class="critDmgModifier" value="15"><label
+                    for="ecCheckbox">Elemental Catalyst (15%)</label><br>
+                <input type="checkbox" id="lucentCheckbox" class="critDmgModifier" value="11"><label
+                    for="lucentCheckbox">Lucent Echoes (11%)</label><br>
             </div>
+            <div class="CategoryDiv">
+                <h3>Player Gear</h3>
+                <label for="mediumArmorSelect">Medium Armor (2%)</label>
+                <select id="mediumArmorSelect" class="critDmgModifier">
+                    <option value="0">0 pieces</option>
+                    <option value="2">1 piece</option>
+                    <option value="4">2 pieces</option>
+                    <option value="6">3 pieces</option>
+                    <option value="8">4 pieces</option>
+                    <option value="10">5 pieces</option>
+                    <option value="12">6 pieces</option>
+                    <option value="14">7 pieces</option>
+                </select><br>
+                <input type="checkbox" id="harpoonerCheckbox" class="critDmgModifier" value="10"><label
+                    for="harpoonerCheckbox">Harpooner's Wading Kilt (10%)</label><br>
+                <input type="checkbox" id="sulxanCheckbox" class="critDmgModifier" value="12"><label
+                    for="sulxanCheckbox">Sul-Xan's Torment (12%)</label><br>
+                <hr class="breakLine01">
 
-            <div class="CategoriesDiv">
-                <div class="CategoryDiv">
-                    <h3>Group Gear</h3>
-                    <input type="checkbox" id="ecCheckbox" class="critDmgModifier" value="15"><label
-                        for="ecCheckbox">Elemental Catalyst (15%)</label><br>
-                    <input type="checkbox" id="lucentCheckbox" class="critDmgModifier" value="11"><label
-                        for="lucentCheckbox">Lucent Echoes (11%)</label><br>
-                </div>
-                <div class="CategoryDiv">
-                    <h3>Player Gear</h3>
-                    <label for="mediumArmorSelect">Medium Armor (2%)</label>
-                    <select id="mediumArmorSelect" class="critDmgModifier">
-                        <option value="0">0 pieces</option>
-                        <option value="2">1 piece</option>
-                        <option value="4">2 pieces</option>
-                        <option value="6">3 pieces</option>
-                        <option value="8">4 pieces</option>
-                        <option value="10">5 pieces</option>
-                        <option value="12">6 pieces</option>
-                        <option value="14">7 pieces</option>
-                    </select><br>
-                    <input type="checkbox" id="harpoonerCheckbox" class="critDmgModifier" value="10"><label
-                        for="harpoonerCheckbox">Harpooner's Wading Kilt (10%)</label><br>
-                    <input type="checkbox" id="sulxanCheckbox" class="critDmgModifier" value="12"><label
-                        for="sulxanCheckbox">Sul-Xan's Torment (12%)</label><br>
-                    <hr class="breakLine01">
+                <label for="axeSelect">Axe/Battle Axe</label>
+                <select id="axeSelect" class="critDmgModifier">
+                    <option value="0">None</option>
+                    <option value="6">Axe (6%)</option>
+                    <option value="12">2 Axes/Battle Axe (12%) </option>
+                </select><br>
+            </div>
+            <div class="CategoryDiv">
+                <h3>(De)Buffs</h3>
+                <input type="checkbox" id="minorForceCheckbox" class="critDmgModifier" value="10" checked><label
+                    for="minorForceCheckbox">Minor Force (10%)</label><br>
+                <input type="checkbox" id="majorForceCheckbox" class="critDmgModifier" value="20" checked><label
+                    for="majorForceCheckbox">Major Force (20%)</label><br>
+                <input type="checkbox" id="minorBrittleCheckbox" class="critDmgModifier" value="10"><label
+                    for="minorBrittleCheckbox">Minor Brittle (10%)</label><br>
+                <hr class="breakLine01">
 
-                    <label for="axeSelect">Axe/Battle Axe</label>
-                    <select id="axeSelect" class="critDmgModifier">
-                        <option value="0">None</option>
-                        <option value="6">Axe (6%)</option>
-                        <option value="12">2 Axes/Battle Axe (12%) </option>
-                    </select><br>
-                </div>
-                <div class="CategoryDiv">
-                    <h3>(De)Buffs</h3>
-                    <input type="checkbox" id="minorForceCheckbox" class="critDmgModifier" value="10" checked><label
-                        for="minorForceCheckbox">Minor Force (10%)</label><br>
-                    <input type="checkbox" id="majorForceCheckbox" class="critDmgModifier" value="20" checked><label
-                        for="majorForceCheckbox">Major Force (20%)</label><br>
-                    <input type="checkbox" id="minorBrittleCheckbox" class="critDmgModifier" value="10"><label
-                        for="minorBrittleCheckbox">Minor Brittle (10%)</label><br>
-                    <hr class="breakLine01">
-
-                    <input type="checkbox" id="majorBrittleCheckbox" class="critDmgModifier" value="20"><label
-                        for="majorBrittleCheckbox">Major Brittle (20%)</label><br>
-                </div>
-                <div class="CategoryDiv">
-                    <h3>Passives</h3>
-                    <input type="checkbox" id="fightingFinesseCheckbox" class="critDmgModifier" value="8"><label
-                        for="fightingFinesseCheckbox">Fighting Finesse (CP slotable) (8%)</label><br>
-                    <input type="checkbox" id="backstabberCheckbox" class="critDmgModifier" value="10"><label
-                        for="backstabberCheckbox">Backstabber (CP slotable) (10%)</label><br>
-                    <input type="checkbox" id="khajiitCheckbox" class="critDmgModifier" value="12"><label
-                        for="khajiitCheckbox">Khajiit (12%)</label><br>
-                    <input type="checkbox" id="nightbladeCritDmgCheckbox" class="critDmgModifier" value="10"><label
-                        for="nightbladeCritDmgCheckbox">Nightblade (10%)</label><br>
-                    <input type="checkbox" id="templarCheckbox" class="critDmgModifier" value="10"><label
-                        for="templarCheckbox">Templar (10%)</label><br>
-                    <label for="shadowMundusSelect">Shadow Mundus</label>
-                    <select id="shadowMundusSelect" class="critDmgModifier">
-                        <option value="0">No Shadow Mundus</option>
-                        <option value="11">0 divine pieces</option>
-                        <option value="12">1 divine pieces</option>
-                        <option value="13">2 divine pieces</option>
-                        <option value="14">3 divine pieces</option>
-                        <option value="15">4 divine pieces</option>
-                        <option value="16">5 divine pieces</option>
-                        <option value="17">6 divine pieces</option>
-                        <option value="18">7 divine pieces</option>
-                        <option value="19">8 divine pieces</option>
-                    </select><br>
-                </div>
+                <input type="checkbox" id="majorBrittleCheckbox" class="critDmgModifier" value="20"><label
+                    for="majorBrittleCheckbox">Major Brittle (20%)</label><br>
+            </div>
+            <div class="CategoryDiv">
+                <h3>Passives</h3>
+                <input type="checkbox" id="fightingFinesseCheckbox" class="critDmgModifier" value="8"><label
+                    for="fightingFinesseCheckbox">Fighting Finesse (CP slotable) (8%)</label><br>
+                <input type="checkbox" id="backstabberCheckbox" class="critDmgModifier" value="10"><label
+                    for="backstabberCheckbox">Backstabber (CP slotable) (10%)</label><br>
+                <input type="checkbox" id="khajiitCheckbox" class="critDmgModifier" value="12"><label
+                    for="khajiitCheckbox">Khajiit (12%)</label><br>
+                <input type="checkbox" id="nightbladeCritDmgCheckbox" class="critDmgModifier" value="10"><label
+                    for="nightbladeCritDmgCheckbox">Nightblade (10%)</label><br>
+                <input type="checkbox" id="templarCheckbox" class="critDmgModifier" value="10"><label
+                    for="templarCheckbox">Templar (10%)</label><br>
+                <label for="shadowMundusSelect">Shadow Mundus</label>
+                <select id="shadowMundusSelect" class="critDmgModifier">
+                    <option value="0">No Shadow Mundus</option>
+                    <option value="11">0 divine pieces</option>
+                    <option value="12">1 divine pieces</option>
+                    <option value="13">2 divine pieces</option>
+                    <option value="14">3 divine pieces</option>
+                    <option value="15">4 divine pieces</option>
+                    <option value="16">5 divine pieces</option>
+                    <option value="17">6 divine pieces</option>
+                    <option value="18">7 divine pieces</option>
+                    <option value="19">8 divine pieces</option>
+                </select><br><br>
             </div>
         </div>
     </div>
