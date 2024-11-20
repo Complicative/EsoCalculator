@@ -32,4 +32,25 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     updateCalculations();
 
+    if (window.location.hostname == "127.0.0.1") {
+        console.log("local access");
+        fetch("https://api.counterapi.dev/v1/esocalculator/visits" + getDay())
+            .then(res => res.json())
+            .then(visits => {
+                console.log("Total visits today: " + visits.count);
+            })
+    } else {
+        fetch("https://api.counterapi.dev/v1/esocalculator/visits" + getDay() + "/up")
+            .then(res => res.json())
+            .then(visits => {
+                console.log("Total visits today: " + visits.count);
+                console.log(window.location)
+            })
+    }
+
 });
+
+const getDay = () => {
+    const currentDay = Math.floor((Date.now() / 1000) / 86400);
+    return currentDay;
+};
